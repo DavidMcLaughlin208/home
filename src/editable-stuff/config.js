@@ -6,30 +6,18 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Hashir",
+  firstName: "David",
   middleName: "",
-  lastName: "Shoaib",
-  message: " Passionate about changing the world with technology. ",
+  lastName: "McLaughlin",
+  message: " Passionate about solving complex problems through collaboration and creative solutions ",
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
-    },
-    {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
-    },
-    {
-      image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
+      url: "https://github.com/davidmclaughlin208",
     },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
-    },
-    {
-      image: "fa-twitter",
-      url: "https://www.twitter.com/hashirshoaeb/",
+      url: "https://www.linkedin.com/in/davidmclaughlin208",
     },
   ],
 };
@@ -51,11 +39,11 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/hashirshoaeb.png"),
+  imageLink: require("../editable-stuff/DavidMcLaughlin.jpg"),
   imageSize: 375,
   message:
-    "My name is Hashir Shoaib. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+  "My name is David McLaughlin. I'm a software developer who loves to solve challenging problems through collaboration and creative solutions. After getting a bachelors in Accounting and working for a year I discovered the art of programming. I pursued this new passion by attending DevBootcamp and then working for Amazon for 4 years as a Support Engineer and Software Developer. I was able to expand my skillset as well as my grasp of all the aspects of the software development job and lifecycle. In my free time I like to work on coding various simulations with a visual component.",
+  resume: "https://docs.google.com/document/d/1vmRRFo4rxQim8WvidcGFb5CGU_V8Y7CVaP29mY8q6vk/edit?usp=sharing",
 };
 
 // PROJECTS SECTION
@@ -66,7 +54,7 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
+  gitHubUsername: "davidmclaughlin208", //i.e."johnDoe12Gh"
   reposLength: 4,
   specificRepos: [],
 };
@@ -100,25 +88,25 @@ const skills = {
   show: true,
   heading: "Skills",
   hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
+    { name: "Java", value: 90 },
+    { name: "JavaScript", value: 75 },
     { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
+    { name: "C++", value: 55 },
+    { name: "Python", value: 65 },
+    { name: "Angular", value: 75 },
+    { name: "HTML/CSS", value: 60 },
     { name: "C#", value: 80 },
   ],
-  softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
-  ],
+  // softSkills: [
+  //   { name: "Goal-Oriented", value: 80 },
+  //   { name: "Collaboration", value: 90 },
+  //   { name: "Positivity", value: 75 },
+  //   { name: "Adaptability", value: 85 },
+  //   { name: "Problem Solving", value: 75 },
+  //   { name: "Empathy", value: 90 },
+  //   { name: "Organization", value: 70 },
+  //   { name: "Creativity", value: 90 },
+  // ],
 };
 
 // GET IN TOUCH SECTION
@@ -126,24 +114,29 @@ const getInTouch = {
   show: true,
   heading: "Get In Touch",
   message:
-    "I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
-  email: "hashirshoaeb@gmail.com",
+    "I'm currently looking for full-time Software Engineering opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+  email: "davidmclaughlin208@gmail.com",
 };
 
 const experiences = {
-  show: false,
+  show: true,
   heading: "Experiences",
   data: [
     {
-      role: 'Software Engineer',// Here Add Company Name
-      companylogo: require('../assets/img/dell.png'),
-      date: 'June 2018 – Present',
+      role: 'Software Development Engineer II - Amazon, Inc',// Here Add Company Name
+      companylogo: require('../assets/img/AmazonLogo.png'),
+      date: 'December 2020 – April 2021',
     },
     {
-      role: 'Front-End Developer',
-      companylogo: require('../assets/img/boeing.png'),
-      date: 'May 2017 – May 2018',
+      role: 'Software Development Engineer I - Amazon, Inc',
+      companylogo: require('../assets/img/AmazonLogo.png'),
+      date: 'November 2018 – December 2020',
     },
+    {
+      role: 'Support Engineer III - Amazon, Inc',
+      companylogo: require('../assets/img/AmazonLogo.png'),
+      date: 'June 2017 – November 2018',
+    }
   ]
 }
 
