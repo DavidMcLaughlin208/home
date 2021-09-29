@@ -86,7 +86,7 @@ const leadership = {
 
 // SKILLS SECTION
 const skills = {
-  show: true,
+  show: false,
   heading: "Skills",
   hardSkills: [
     { name: "Java", value: 90 },
@@ -98,16 +98,16 @@ const skills = {
     { name: "HTML/CSS", value: 60 },
     { name: "C#", value: 80 },
   ],
-  // softSkills: [
-  //   { name: "Goal-Oriented", value: 80 },
-  //   { name: "Collaboration", value: 90 },
-  //   { name: "Positivity", value: 75 },
-  //   { name: "Adaptability", value: 85 },
-  //   { name: "Problem Solving", value: 75 },
-  //   { name: "Empathy", value: 90 },
-  //   { name: "Organization", value: 70 },
-  //   { name: "Creativity", value: 90 },
-  // ],
+  softSkills: [
+    { name: "Goal-Oriented", value: 80 },
+    { name: "Collaboration", value: 90 },
+    { name: "Positivity", value: 75 },
+    { name: "Adaptability", value: 85 },
+    { name: "Problem Solving", value: 75 },
+    { name: "Empathy", value: 90 },
+    { name: "Organization", value: 70 },
+    { name: "Creativity", value: 90 },
+  ],
 };
 
 // GET IN TOUCH SECTION
@@ -126,23 +126,40 @@ const techExperiences = {
     {
       heading: "Java/Spring, JUnit/Mockito",
       subHeading: "3 years professional experience + personal projects",
-      content: "I worked primarily with Java on my team at Amazon. Our SpringBoot application made extensive use of multithreading and synchronization which has given me a developed understanding of the care required to make a comprehensive parellel system. I also wrote CRUD APIs within the framework and contributed to the comprehensive testing suite we had developed."
+      img: require("../editable-stuff/java.png"), 
+      content: "I worked primarily with Java on my team at Amazon. Our SpringBoot application made extensive use of multithreading and synchronization which has given me a developed understanding of the care required to make a comprehensive parellel system. I also wrote CRUD APIs within the framework and contributed to the comprehensive testing suite we had developed."      
     },
     {
       heading: "JavaScript, Angular, Bootstrap",
       subHeading: "3 years professional experience",
+      img: require("../editable-stuff/javascript.png"), 
       content: "My Amazon team had a UI component to our service which was run with JS and AngularJS. When I first started on the team I worked primarily on the UI, making improvements and enhancements, using AngularJS and Bootstrap, which I identified based on client feedback. After gaining more expertise I built multiple dynamic UI pages from scratch to connected with backend APIs I was developing. This has given me a good understanding of reactive UI frameworks."
     },
     {
       heading: "Shell Scripting",
       subHeading: "2 years professional experience",
+      img: require("../editable-stuff/bash.png"), 
       content: "In my time at Amazon I identified multiple processes which could be automated and streamlined by writing a shell script for use by the team. Most notable example was a comprehensive script to fetch host names for a fleet, run a log fetching command in parallel for all hosts, used 'sed' and 'awk' to parse the logs, and displayed all WARN/ERROR logs which occurred after the latest deployment in order of count and frequency. This helped us identify any deployment related issues with increased speed."
+    },
+    {
+      heading: "Linux/Unix Development",
+      subHeading: "3 years professional experience",
+      img: require("../editable-stuff/linux.png"), 
+      content: "At Amazon I developed on a combination of a physical MacBook and a cloud-desktop running Linux. I am very familiar with Linux command line tools as well as Unix."
+    },
+    {
+      heading: "AWS Services",
+      subHeading: "3 years professional experience",
+      img: require("../editable-stuff/aws.png"), 
+      content: "In my three years of software development experience I was able to work with a variety of AWS services. The services I worked with in order of experience level are: DynamoDB, SQS, Lambda, DataPipelines, CloudFormation, EC2, and ECS"
     },
     {
       heading: "C++, OpenFrameworks",
       subHeading: "1 year of personal projects",
+      img: require("../editable-stuff/cpp.png"), 
       content: "I wanted to expand my scope of mastered languages and in the past year have completed multiple personal projects using c++ as the primary language. Learning to use this language has improved my understanding of datatypes, agorithms, and memory management. Two of the listed projects below were written with c++."
     }
+    
   ]
 }
 

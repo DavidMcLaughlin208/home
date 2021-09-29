@@ -19,8 +19,9 @@ const TechExperienceCard = ({value}) => {
     return (
         <Col md={4}>
             <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
-                <Col md={12}>
+                <Col md={12}>                    
                     <h3 className="text-center">{value.heading}</h3>
+                    <img className="mx-auto d-block" src={value.img} width="30%" />
                     <h5 className="text-center">{value.subHeading}</h5>
                     <div className="pb-5" text-center>
                         <p>{value.content}</p>
