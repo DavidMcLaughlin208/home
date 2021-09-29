@@ -25,7 +25,7 @@ const ProjectCard = ({ value, gifs }) => {
           </Col>
           {gifs != null && gifs[name] != null ?
           <Col md={8} className="d-inline-block">
-            <img src={gifs[name]}></img>
+            <img src={gifs[name]} width="90%" height="90%"></img>
           </Col> : <span></span>}
           
           <hr />

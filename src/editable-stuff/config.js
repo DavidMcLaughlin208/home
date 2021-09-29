@@ -42,7 +42,7 @@ const about = {
   imageLink: require("../editable-stuff/DavidMcLaughlin.JPG"),
   imageSize: 375,
   message:
-  "My name is David McLaughlin. I'm a software developer who loves to solve challenging problems through collaboration and creative solutions. After getting a bachelors in Accounting and working for a year I discovered the art of programming. I pursued this new passion by attending DevBootcamp and then working for Amazon for 4 years as a Support Engineer and Software Developer. I was able to expand my skillset as well as my grasp of all the aspects of the software development job and lifecycle. In my free time I like to work on coding various simulations with a visual component.",
+  "My name is David McLaughlin. I'm a software developer who loves to solve challenging problems through collaboration and creative solutions. After getting a bachelors in Accounting and working for a year I discovered the art of programming. I pursued this new passion by attending DevBootcamp and then working for Amazon for 4 years as a Support Engineer and Software Developer. I was able to expand my skillset as well as my grasp of all the aspects of the software development job and lifecycle. In my free time I like to work on coding various simulations with a visual component as well as writing and recording music.",
   resume: "https://docs.google.com/document/d/1vmRRFo4rxQim8WvidcGFb5CGU_V8Y7CVaP29mY8q6vk/edit?usp=sharing",
 };
 
@@ -56,8 +56,8 @@ const repos = {
   heading: "Notable Projects",
   gitHubUsername: "davidmclaughlin208", //i.e."johnDoe12Gh"
   reposLength: 0,
-  specificRepos: ["PixelSorting", "FallingSandJava", "SlimeMoldPhysarum", "cascading-pixels"],
-  gifs: {"PixelSorting": require("../editable-stuff/PixelSorting.gif")}
+  specificRepos: ["PixelSorting", "SlimeMoldPhysarum", "FallingSandJava"],
+  gifs: {"PixelSorting": require("../editable-stuff/PixelSorting.gif"), "SlimeMoldPhysarum": require("../editable-stuff/SlimeMoldPhysarum.gif"), "FallingSandJava": require("../editable-stuff/FallingSandJava.gif")}
 };
 
 // Leadership SECTION
@@ -119,9 +119,36 @@ const getInTouch = {
   email: "davidmclaughlin208@gmail.com",
 };
 
+const techExperiences = {
+  show: true,
+  heading: "Technical Mastery",
+  data : [
+    {
+      heading: "Java/Spring, JUnit/Mockito",
+      subHeading: "3 years professional experience + personal projects",
+      content: "I worked primarily with Java on my team at Amazon. Our SpringBoot application made extensive use of multithreading and synchronization which has given me a developed understanding of the care required to make a comprehensive parellel system. I also wrote CRUD APIs within the framework and contributed to the comprehensive testing suite we had developed."
+    },
+    {
+      heading: "JavaScript, Angular, Bootstrap",
+      subHeading: "3 years professional experience",
+      content: "My Amazon team had a UI component to our service which was run with JS and AngularJS. When I first started on the team I worked primarily on the UI, making improvements and enhancements, using AngularJS and Bootstrap, which I identified based on client feedback. After gaining more expertise I built multiple dynamic UI pages from scratch to connected with backend APIs I was developing. This has given me a good understanding of reactive UI frameworks."
+    },
+    {
+      heading: "Shell Scripting",
+      subHeading: "2 years professional experience",
+      content: "In my time at Amazon I identified multiple processes which could be automated and streamlined by writing a shell script for use by the team. Most notable example was a comprehensive script to fetch host names for a fleet, run a log fetching command in parallel for all hosts, used 'sed' and 'awk' to parse the logs, and displayed all WARN/ERROR logs which occurred after the latest deployment in order of count and frequency. This helped us identify any deployment related issues with increased speed."
+    },
+    {
+      heading: "C++, OpenFrameworks",
+      subHeading: "1 year of personal projects",
+      content: "I wanted to expand my scope of mastered languages and in the past year have completed multiple personal projects using c++ as the primary language. Learning to use this language has improved my understanding of datatypes, agorithms, and memory management. Two of the listed projects below were written with c++."
+    }
+  ]
+}
+
 const experiences = {
   show: true,
-  heading: "Experiences",
+  heading: "Job Experience",
   data: [
     {
       role: 'Software Development Engineer II - Amazon, Inc',// Here Add Company Name
@@ -146,4 +173,4 @@ const experiences = {
 //   show: false,
 // };
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, techExperiences };
