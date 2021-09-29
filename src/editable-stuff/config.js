@@ -42,7 +42,7 @@ const about = {
   imageLink: require("../editable-stuff/DavidMcLaughlin.JPG"),
   imageSize: 375,
   message:
-  "My name is David McLaughlin. I'm a software developer who loves to solve challenging problems through collaboration and creative solutions. After getting a bachelors in Accounting and working for a year I discovered the art of programming. I pursued this new passion by attending DevBootcamp and then working for Amazon for 4 years as a Support Engineer and Software Developer. I was able to expand my skillset as well as my grasp of all the aspects of the software development job and lifecycle. In my free time I like to work on coding various simulations with a visual component as well as writing and recording music.",
+  "My name is David McLaughlin. I'm a software developer who loves to solve challenging problems through collaboration and creative solutions. After getting a BA in Accounting and working for a year I discovered the art of programming. I pursued this new passion by attending DevBootcamp and then working for Amazon for 4 years as a Support Engineer and Software Developer. I was able to expand my skillset as well as my grasp of all the aspects of the software development job and lifecycle. In my free time I like to work on coding various simulations with a visual component as well as writing and recording music.",
   resume: "https://docs.google.com/document/d/1vmRRFo4rxQim8WvidcGFb5CGU_V8Y7CVaP29mY8q6vk/edit?usp=sharing",
 };
 
@@ -168,19 +168,22 @@ const experiences = {
   heading: "Job Experience",
   data: [
     {
-      role: 'Software Development Engineer II - Amazon, Inc',// Here Add Company Name
+      role: 'Support Engineer III - Amazon, Inc',
       companylogo: require('../assets/img/AmazonLogo.jpeg'),
-      date: 'December 2020 – April 2021',
+      date: 'June 2017 – November 2018',
+      time: "1 year, 4 months"
     },
     {
       role: 'Software Development Engineer I - Amazon, Inc',
       companylogo: require('../assets/img/AmazonLogo.jpeg'),
       date: 'November 2018 – December 2020',
+      time: "2 years, 1 month"
     },
     {
-      role: 'Support Engineer III - Amazon, Inc',
+      role: 'Software Development Engineer II - Amazon, Inc',// Here Add Company Name
       companylogo: require('../assets/img/AmazonLogo.jpeg'),
-      date: 'June 2017 – November 2018',
+      date: 'December 2020 – April 2021',
+      time: "5 months"
     }
   ]
 }
