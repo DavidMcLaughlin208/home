@@ -39,7 +39,7 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/DavidMcLaughlin.jpg"),
+  imageLink: require("../editable-stuff/DavidMcLaughlin.JPG"),
   imageSize: 375,
   message:
   "My name is David McLaughlin. I'm a software developer who loves to solve challenging problems through collaboration and creative solutions. After getting a bachelors in Accounting and working for a year I discovered the art of programming. I pursued this new passion by attending DevBootcamp and then working for Amazon for 4 years as a Support Engineer and Software Developer. I was able to expand my skillset as well as my grasp of all the aspects of the software development job and lifecycle. In my free time I like to work on coding various simulations with a visual component.",
@@ -53,10 +53,11 @@ const about = {
 //      i.e ["repository-1", "repo-2"]
 const repos = {
   show: true,
-  heading: "Recent Projects",
+  heading: "Notable Projects",
   gitHubUsername: "davidmclaughlin208", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  reposLength: 0,
+  specificRepos: ["PixelSorting", "FallingSandJava", "SlimeMoldPhysarum", "cascading-pixels"],
+  gifs: {"PixelSorting": require("../editable-stuff/PixelSorting.gif")}
 };
 
 // Leadership SECTION
@@ -67,12 +68,12 @@ const leadership = {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
   images: [
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../editable-stuff/DavidMcLaughlin.JPG"), 
       label: "First slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
     { 
-      img: require("../editable-stuff/hashirshoaeb.png"), 
+      img: require("../editable-stuff/DavidMcLaughlin.JPG"), 
       label: "Second slide label", 
       paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
     },
@@ -124,17 +125,17 @@ const experiences = {
   data: [
     {
       role: 'Software Development Engineer II - Amazon, Inc',// Here Add Company Name
-      companylogo: require('../assets/img/AmazonLogo.png'),
+      companylogo: require('../assets/img/AmazonLogo.jpeg'),
       date: 'December 2020 – April 2021',
     },
     {
       role: 'Software Development Engineer I - Amazon, Inc',
-      companylogo: require('../assets/img/AmazonLogo.png'),
+      companylogo: require('../assets/img/AmazonLogo.jpeg'),
       date: 'November 2018 – December 2020',
     },
     {
       role: 'Support Engineer III - Amazon, Inc',
-      companylogo: require('../assets/img/AmazonLogo.png'),
+      companylogo: require('../assets/img/AmazonLogo.jpeg'),
       date: 'June 2017 – November 2018',
     }
   ]

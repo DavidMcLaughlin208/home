@@ -4,7 +4,7 @@ import Card from "react-bootstrap/Card";
 import Skeleton from "react-loading-skeleton";
 import axios from "axios";
 
-const ProjectCard = ({ value }) => {
+const ProjectCard = ({ value, gifs }) => {
   const {
     name,
     description,
@@ -14,12 +14,20 @@ const ProjectCard = ({ value }) => {
     pushed_at,
   } = value;
   return (
-    <Col md={6}>
+    <Col md={12}>
       <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
         <Card.Body>
-          <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
-          <Card.Text>{(!description)?"":description || <Skeleton count={3} />} </Card.Text>
-          {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
+          <Col md={gifs != null && gifs[name] != null ? 4 : 12} className={gifs != null && gifs[name] != null ? "d-inline-block" : ""}>
+            <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
+            <Card.Text>{(!description)?"":description || <Skeleton count={3} />} </Card.Text>
+            {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
+            
+          </Col>
+          {gifs != null && gifs[name] != null ?
+          <Col md={8} className="d-inline-block">
+            <img src={gifs[name]}></img>
+          </Col> : <span></span>}
+          
           <hr />
           {languages_url ? (
             <Language languages_url={languages_url} repo_url={svn_url} />
@@ -40,12 +48,6 @@ const ProjectCard = ({ value }) => {
 const CardButtons = ({ svn_url }) => {
   return (
     <>
-      <a
-        href={`${svn_url}/archive/master.zip`}
-        className="btn btn-outline-secondary mr-3"
-      >
-        <i className="fab fa-github" /> Clone Project
-      </a>
       <a href={svn_url} target=" _blank" className="btn btn-outline-secondary">
         <i className="fab fa-github" /> Repo
       </a>

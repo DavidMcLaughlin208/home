@@ -17,7 +17,7 @@ const API = "https://api.github.com";
 // const gitHubQuery = "/repos?sort=updated&direction=desc";
 // const specficQuerry = "https://api.github.com/repos/hashirshoaeb/";
 
-const Project = ({ heading, username, length, specfic }) => {
+const Project = ({ heading, username, length, specfic, gifs }) => {
   const allReposAPI = `${API}/users/${username}/repos?sort=updated&direction=desc`;
   const specficReposAPI = `${API}/repos/${username}`;
   const dummyProjectsArr = new Array(length + specfic.length).fill(
@@ -25,6 +25,7 @@ const Project = ({ heading, username, length, specfic }) => {
   );
 
   const [projectsArray, setProjectsArray] = useState([]);
+
 
   const fetchRepos = useCallback(async () => {
     let repoList = [];
@@ -48,7 +49,7 @@ const Project = ({ heading, username, length, specfic }) => {
     } catch (error) {
       console.error(error.message);
     }
-  }, [allReposAPI, length, specfic, specficReposAPI]);
+  }, [allReposAPI, length, specfic, specficReposAPI, gifs]);
 
   useEffect(() => {
     fetchRepos();
@@ -65,6 +66,7 @@ const Project = ({ heading, username, length, specfic }) => {
                   key={`project-card-${index}`}
                   id={`project-card-${index}`}
                   value={project}
+                  gifs={gifs}
                 />
               ))
             : dummyProjectsArr.map((project, index) => (
@@ -72,6 +74,7 @@ const Project = ({ heading, username, length, specfic }) => {
                   key={`dummy-${index}`}
                   id={`dummy-${index}`}
                   value={project}
+                  gifs={gifs}
                 />
               ))}
         </Row>
