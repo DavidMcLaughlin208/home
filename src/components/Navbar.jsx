@@ -4,7 +4,7 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { mainBody, repos, about, skills } from "../editable-stuff/config.js";
+import { mainBody, repos, about, skills, techExperiences } from "../editable-stuff/config.js";
 
 const Navigation = React.forwardRef((props, ref) => {
   // const { showBlog, FirstName } = config;
@@ -50,12 +50,12 @@ const Navigation = React.forwardRef((props, ref) => {
               <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
             </Nav.Link>
           } */}
-          {repos.show && (
+          {about.show && (
             <Nav.Link
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#projects"}
+              href={process.env.PUBLIC_URL + "/#aboutme"}
             >
-              Projects
+              About
             </Nav.Link>
           )}
           <Nav.Link
@@ -66,14 +66,25 @@ const Navigation = React.forwardRef((props, ref) => {
           >
             Resume
           </Nav.Link>
-          {about.show && (
+          {techExperiences.show && (
             <Nav.Link
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#aboutme"}
+              href={process.env.PUBLIC_URL + "/#technical-experience"}
             >
-              About
+              Technical Skills
             </Nav.Link>
           )}
+          {repos.show && (
+            <Nav.Link
+              className="nav-link lead"
+              href={process.env.PUBLIC_URL + "/#projects"}
+            >
+              Projects
+            </Nav.Link>
+          )}
+          
+          
+          
           {skills.show && (
             <Nav.Link
               className="nav-link lead"

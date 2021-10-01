@@ -39,7 +39,7 @@ const mainBody = {
 const about = {
   show: true,
   heading: "About Me",
-  imageLink: require("../editable-stuff/DavidMcLaughlin.JPG"),
+  imageLink: require("../editable-stuff/DavidMcLaughlinPhoto.png"),
   imageSize: 375,
   message:
   "My name is David McLaughlin. I'm a software developer who loves to solve challenging problems through collaboration and creative solutions. After getting a BA in Accounting and working for a year I discovered the art of programming. I pursued this new passion by attending DevBootcamp and then working for Amazon for 4 years as a Support Engineer and Software Developer. I was able to expand my skillset as well as my grasp of all the aspects of the software development job and lifecycle. In my free time I like to work on coding various simulations with a visual component as well as writing and recording music.",
@@ -127,13 +127,13 @@ const techExperiences = {
       heading: "Java/Spring, JUnit/Mockito",
       subHeading: "3 years professional experience + personal projects",
       img: require("../editable-stuff/java.png"), 
-      content: "I worked primarily with Java on my team at Amazon. Our SpringBoot application made extensive use of multithreading and synchronization which has given me a developed understanding of the care required to make a comprehensive parellel system. I also wrote CRUD APIs within the framework and contributed to the comprehensive testing suite we had developed."      
+      content: "I worked primarily with Java on my team at Amazon. Our SpringBoot application made extensive use of multithreading and synchronization which has given me a developed understanding of the care required to make a comprehensive parellel system. I also wrote CRUD APIs within the framework and contributed to the comprehensive unit, integration, and UI testing suite we had developed."      
     },
     {
       heading: "JavaScript, Angular, Bootstrap",
       subHeading: "3 years professional experience",
       img: require("../editable-stuff/javascript.png"), 
-      content: "My Amazon team had a UI component to our service which was run with JS and AngularJS. When I first started on the team I worked primarily on the UI, making improvements and enhancements, using AngularJS and Bootstrap, which I identified based on client feedback. After gaining more expertise I built multiple dynamic UI pages from scratch to connected with backend APIs I was developing. This has given me a good understanding of reactive UI frameworks."
+      content: "My Amazon team had a UI component to our service which was powered by JS and AngularJS. When I first started on the team I worked primarily on the UI, making improvements and enhancements, using AngularJS and Bootstrap, which I identified based on client feedback. After gaining more expertise I built multiple dynamic UI pages from scratch to connect with backend APIs I was developing. This has given me a good understanding of reactive UI frameworks."
     },
     {
       heading: "Shell Scripting",
@@ -145,7 +145,7 @@ const techExperiences = {
       heading: "Linux/Unix Development",
       subHeading: "3 years professional experience",
       img: require("../editable-stuff/linux.png"), 
-      content: "At Amazon I developed on a combination of a physical MacBook and a cloud-desktop running Linux. I am very familiar with Linux command line tools as well as Unix."
+      content: "Professionally, I developed on a combination of a physical MacBook and a cloud-desktop running Linux. This has helped me become familiar with navigating Linux by command line as well as managing terminal sessions, managing processes, setting up custom cron jobs, and monitoring network traffic."
     },
     {
       heading: "AWS Services",
