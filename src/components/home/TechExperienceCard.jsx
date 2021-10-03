@@ -22,6 +22,7 @@ const TechExperienceCard = ({value}) => {
                 <Col md={12}>                    
                     <h3 className="text-center">{value.heading}</h3>
                     <img className="mx-auto d-block" src={value.img} width="30%" />
+                    <br />
                     <h5 className="text-center">{value.subHeading}</h5>
                     <div className="pb-5" text-center>
                         <p>{value.content}</p>

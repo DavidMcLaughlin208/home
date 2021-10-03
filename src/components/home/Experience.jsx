@@ -28,13 +28,13 @@ const Experience = ({experiences}) => {
                             <Col className="text-left d-inline-block" md={3}>
                                 <p className="lead mb-1 mt-2">June 2017</p>
                             </Col>
-                            <Col className="text-center d-inline-block" md={3}>
+                            <Col className="text-left d-inline-block" md={3}>
                                 <p className="lead mb-1 mt-2">November 2018</p>
                             </Col>
-                            <Col className="text-center d-inline-block" md={3}>
+                            <Col className="text-right d-inline-block" md={4}>
                                 <p className="lead mb-1 mt-2">December 2020</p>
                             </Col>
-                            <Col className="text-right d-inline-block" md={3}>
+                            <Col className="text-right d-inline-block" md={2}>
                                 <p className="lead mb-1 mt-2">April 2021</p>
                             </Col>
                             <ProgressBar
